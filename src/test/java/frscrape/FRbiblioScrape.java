@@ -46,8 +46,8 @@ class FRbiblioScrape extends PageObject {
 
     public void getFRdetails() throws FileNotFoundException, IOException, InterruptedException {
         FileInputStream file = new FileInputStream(new File(
-                "D:\\Bookfr.xlsx"));
-        String excelFileName = "D:\\froutput.xlsx";//name of excel file
+                "D:\\FRscrape\\Bookfr.xlsx"));
+        String excelFileName = "D:\\FRscrape\\froutput.xlsx";//name of excel file
         String sheetName = "fndetails";//name of sheetWrite
         XSSFWorkbook workbookWrite = new XSSFWorkbook();
         XSSFSheet sheetWrite = workbookWrite.createSheet(sheetName);
