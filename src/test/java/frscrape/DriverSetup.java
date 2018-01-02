@@ -30,6 +30,7 @@ public class DriverSetup {
         sfDriver.manage().deleteAllCookies();
         sfDriver.manage().window().maximize();
         sfDriver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
+        
     }
 
     public DriverSetup navigateToSearchPage() {
